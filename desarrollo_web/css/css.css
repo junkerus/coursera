@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(179, 177, 177, 0.795);
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: #ff0000;
+}
+h3{
+    color: #00ff00;
+}
+p{
+    color:azure;
+
+}
+ul{
+    color: #ff00ff;
+}
+ul #aparte{
+    color: orange;
+}
+ul li{
+    color: #000;
+}

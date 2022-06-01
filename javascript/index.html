@@ -8,6 +8,215 @@
 </head>
 <body>
     <h1>Javascript en Coursera</h1>
+        <h2>Conceptos y ejemplos</h2>
     <script src="./javascript.js"></script>
+
+        <h2>Ejemplos</h2>
+            <p><strong>alert('estamos en javascript');</strong> alerta muestra un mensaje en pantalla</p>
+            <p><strong>prompt("para ingresar datos");</strong> muestra una ventana que solicita ingresar datos</p>
+        <h2>Funciones para convertir datos</h2>
+            <ul>
+                <li>String()</li>
+                <li>Number()</li>
+                <li>Boolean()</li>
+                <li>Symbol()</li>
+                <li>BigInteger()</li>
+            </ul>
+        
+        <h2>Funciones especiales para cambiar de un tipo a otros</h2>
+            <ul>
+                <li>parseInt()</li>
+                <li>parseFloat()</li>
+                <li>parseString()</li>
+                <li>parseBoolean()</li>
+                <li>parseSymbol()</li>
+                <li>parseBigInteger()</li>
+            </ul>
+        
+        <h2>Coercion</h2>
+        <h3>Tipo de coercion:</h3>
+            <ol>
+                <li>implicita, ejemplo: var a = 10; var b = a + "10"; b es un string porque se hace la conversion implicita.</li>
+                <li>explicita, ejemplo: var a = 10; var b = String(a); b es un string porque se hace la conversion explicita.</li>
+                <li>no hay coercion</li>
+            </ol>
+        
+        
+        <h2>Ciclos / condiciones</h2>
+            <ol>
+                <li>intruccion inicial; condicion; incremento</li>
+        while, es un ciclo que se repite mientras la condicion sea verdadera*/
+        do while, es un ciclo que se repite al menos una vez, y luego se evalua la condicion*/
+        for, es un ciclo que se repite un numero de veces, y luego se evalua la condicion*/
+        for in, solo itera sobre propiedades enumerables que no son símbolo*/
+        for of, ejecuta un bloque de código para cada elemento de un objeto iterable, como lo son: String, Array*/
+        forEach, es una funcion indicada una vez por cada elemento del array.
+        forEachIn, es una funcion que recorre un array*/
+        forEachOf, es una funcion que recorre un array y ejecuta una funcion por cada elemento del array
+        forEachOf, es una funcion que recorre un objeto y ejecuta una funcion por cada elemento del objeto
+            </ol>
+        
+        <h2>Operadores de comparacion</h2>
+            <ul>
+                <li>==, igualdad, compara si dos valores son iguales</li>
+                <li>===,   igualdad estricta, compara si dos valores son iguales y tienen el mismo tipo</li>
+                <li>!=,    desigualdad, compara si dos valores son diferentes</li>
+                <li>!==,   desigualdad estricta, compara si dos valores son diferentes y tienen el mismo tipo</li>
+                <li>&lt;,  menor que, compara si un valor es menor que otro</li>
+                <li>&lt;=, menor o igual que, compara si un valor es menor o igual que otro</li>
+                <li>&gt;   mayor que, compara si un valor es mayor que otro</li>
+                <li>&gt;=, mayor o igual que, compara si un valor es mayor o igual que otro</li>
+            </ul>
+        
+        <h2>Operadores logicos</h2>
+            <ul>
+                <li>&&, and, compara si dos valores son verdaderos</li>
+                <li>||, or, compara si dos valores son verdaderos</li>
+                <li>!not, not, compara si un valor es falso</li>
+            </ul>
+
+        <h2>Operadores de asignacion</h2>
+            <ul>
+                <li>=, asignacion, asigna un valor a una variable</li>
+                <li>+=, suma y asignacion, suma un valor a una variable</li>
+                <li>-=, resta y asignacion, resta un valor a una variable</li>
+                <li>*=, multiplicacion y asignacion, multiplica un valor a una variable</li>
+                <li>/=, division y asignacion, divide un valor a una variable</li>
+                <li>%=, modulo y asignacion, obtiene el resto de una division</li>
+                <li>**=, exponente y asignacion, eleva un valor a otro</li>
+            </ul>
+
+        <h2>Operadores de incremento</h2>
+            <ul>
+                <li>++, incremento, incrementa un valor en una unidad</li>
+                <li>--, decremento, decrementa un valor en una unidad</li>
+            </ul>
+
+        <h2>Operadores de acceso</h2>
+            <ul>
+                <li>[]</li>
+                <li>[]=</li>
+                <li>in</li>
+                <li>of</li>
+            </ul>
+
+        <h2>Operadores de concatenacion</h2>
+            <ul>
+                <li>+</li>
+                <li>+=</li>
+            </ul>
+
+        <h2>Condicionales</h2>
+            <ul>
+                <li>if, es una condicion que se evalua si una condicion es verdadera</li>
+                <li>if else, es una condicion que se evalua si una condicion es verdadera, y si no, se evalua otra condicion</li>
+                <li>if else if</li>
+                <li>if else if else</li>
+                <li>switch, valúa una expresión, comparando el valor de esa expresión con una instancia</li>
+            </ul>
+
+        <h2>Funciones</h2>
+        <p>es una funcion que se ejecuta cuando se llama a la funcion</p>
+            <ul>
+                <li>funciones expresiva, es una funcion que se ejecuta cuando se declara la funcion</li>
+                <li>funciones declarativa, es una funcion que se ejecuta cuando se declara la funcion</li>
+            </ul>
+            <h3>Argumentos</h3>
+            <p>es el valor que llena el parametro de una funcion, ejemplo:</p>
+                 <p>function(a){}</p>
+            <h3>Parametros</h3>
+            <p>es la variable que colocamos en la definicion de la funcion, ejemplo:</p>
+            <p>function nombreFuncion(parametro)</p>
+            <p>siempre que un argumento vaya tener un valor por defecto, debe ir al final de la lista de parametros, ejemplo:</p>
+                <p>function nombreFuncion(parametro1, parametro2 = 10){}*/</p>
+        <h2>Funciones puras</h2>
+            <p>es cuando la función no modifica los valores de los argumentos que recibe</p>
+            <p id="ejemplos">ejemplo funcion impura:<br>
+            let nombreVariable=[argumento1];<br><br>
+            function nombreFuncion(nombreVariable){<br>
+            nombreVariable(argumento2)= argumento3;<br>
+            }</p>
+            <p id="ejemplos">ejemplo funcion pura:<br>   
+            let nombreVariable=[argumento1];<br><br>
+            function nombreFuncion(nombreVariable){<br>
+            let nombreVariable2=[...nombreVariable];<br>
+            nombreVariable2[argumento2]= argumento3;<br>
+            return nombreVariable2;<br>
+            }</p>
+           
+        <h2>Firts Class Objects Objeto de primera Clase</h2>
+            <p>una función puede ser pasada como argumento a otras funciones, puede ser retornada por otra función y puede ser asignada a una variable.</p>
+            <p>ejemplo:</p>
+            <p>function diHola() {<br>
+                return "Hola ";<br>
+            }<br>
+            function saludar(saludo, nombre) {<br>
+               console.log(saludo() + nombre);<br>
+            }<br>
+            saludar(diHola, "JavaScript!");</p>
+            <p>Pasamos `diHola` y `JavaScript!` como argumento de la función `saludar`.</p>
+            <p>Una función que pasamos como argumento a otra función, se llama Callback function, funcion de retorno. diHola es una función Callback.</p>
+            <p>Una función Una función que devuelve una función se llama Higher-Order Function, funcion de primer orden.</p>
+
+            <h2>Arreglos</h2>
+            <p>es una coleccion de datos, que pueden ser de cualquier tipo, y pueden tener una longitud fija o variable</p>
+            <p>Cada elemento del arreglo (matriz)  tiene un número al que está asociado, llamado "índice numérico" (numeric index), que permite acceder a él.</p>
+
+            <h2>Busqueda en un arreglo</h2>
+            <p>indexOf(), posicion </p>
+            <p>includes(), si el elemento esta en el arreglo, true, false</p>
+            <p>find, funcion prueba, elemento encontrado</p>
+            <p>findIndex, funcion prueba, posicion del elemento encontrado</p>
+            <p>some, funcion prueba, true, false</p>
+
+            <h2>Spread y rest syntax</h2>
+            <p>Spread, es un operador que permite que una funcion tome una lista de argumentos y los pase a otra funcion</p>
+            <p>rest, es un operador que permite que una funcion tome una lista de argumentos y los pase a otra funcion</p>
+            <h3>Iterable</h3>
+            <p>es una coleccion de datos, que pueden ser de cualquier tipo, y pueden tener una longitud fija o variable</p>
+            <h3>Spread syntax</h3>
+            <p>Spread syntax, ejemplo:</p>
+            <p>function sumar(a, b, c) {<br>
+                return a + b + c;<br>
+            }<br>
+            let numeros = [1, 2, 3];<br>
+            sumar(...numeros);</p>
+
+            <h2>Funcion array</h2>
+            <p>es una funcion que recibe un arreglo y devuelve un nuevo arreglo, ejemplo:</p>
+            <p>let nombreVariable= () =>consolo.log("hola mundo");<br>
+                return arreglo.map(function(elemento){<br>
+                    return elemento;<br>
+                });<br>
+            }</p>
+
+            <h2>Metodos: Bind, call y apply</h2>
+            <p>bind, crea una nueva función, que cuando es llamada, asigna a su operador  this el valor entregado, con una secuencia de argumentos dados precediendo a cualquiera entregados cuando la función es llamada.</p>
+            <p>call, llama a una función con un valor dado this y con argumentos provistos individualmente</p>
+            <p>apply, invoca una determinada función asignando explícitamente el objeto this y un array o similar (array like object) como parámetros (argumentos) para dicha función.</p>
+
+            <h2>Clases</h2>
+            <p>es una estructura de datos que permite crear objetos, y que pueden ser instanciados a través de una función constructora</p>
+            <p>ejemplo:</p>
+            <p>class nombreClase{<br>
+                constructor(argumento1, argumento2){<br>
+                    this.argumento1= argumento1;<br>
+                    this.argumento2= argumento2;<br>
+                }<br>
+                metodo1(){<br>
+                    return this.argumento1 + this.argumento2;<br>
+                }<br>
+            }<br>
+            let nombreVariable= new nombreClase(argumento1, argumento2);<br>
+            nombreVariable.metodo1();</p>
+            
+
+
+            
+
+            
+
+
+
 </body>
 </html>
